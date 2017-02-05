@@ -41,4 +41,4 @@
 ![个人中心页](http://www.zjresume.com/webimg/qidu/collected01.png)  
 
 * __已收藏书籍__   
-![个人中心页](http://www.zjresume.com/webimg/qidu/collected01.png)  
+![个人中心页](http://www.zjresume.com/webimg/qidu/collected02.png)  

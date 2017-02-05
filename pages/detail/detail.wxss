@@ -1,0 +1,133 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+
+}
+
+.bookcover-wrap {
+  height: 540rpx;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookcover-wrap image {
+  height: 480rpx;
+  width: 327rpx;
+}
+
+.bookinfo-wrap {
+  padding: 30rpx 40rpx;
+  background-color: #f9f9f9;
+   font-family: "Microsoft YaHei";
+}
+
+.bookinfo-wrap .basic-msg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basicmsg-left {
+  display: flex;
+  flex-direction: column;
+  font: 24rpx/1.5 "Microsoft YaHei";
+  color: #9b9b9b;
+}
+
+.book-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  color: #494949;
+  display: block;
+  width: 400rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.basicmsg-right {
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #fff;
+  box-shadow: 0 0 4rpx 4rpx #ededed;
+  font-family: "Microsoft YaHei";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.basicmsg-right progress {
+  width: 120rpx;
+  margin: 20rpx 0 16rpx 0;
+}
+
+.average {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #494949;
+}
+
+.num-raters {
+  font-size: 24rpx;
+  color: #9b9b9b;
+}
+.collected-btn{
+  padding-top: 40rpx;
+  font-family: "Microsoft YaHei";
+}
+.uncollected{
+  color:#494949;
+  background-color: #fff;
+}
+.buy-book{
+  padding:40rpx 0 14rpx 0;
+  border-bottom:  2rpx solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+}
+.buy-book image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.reminder{
+  font-size: 30rpx;
+  font-weight: bold;
+  padding-left: 6rpx;
+  color:#494949;
+}
+.merchant{
+  font-size: 26rpx;
+  color:#9b9b9b;
+}
+.other-msg{
+  font-size: 28rpx;
+  padding-top: 40rpx;
+}
+.other-msg .section{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40rpx;
+}
+.other-msg .section .title{
+  margin-bottom: 20rpx;
+  color:#9b9b9b;
+}
+.other-msg .section .content{
+  color:#494949;
+  position: relative;
+}
+.content .more{
+  font-size: 28rpx;
+  color:#1AAD16;
+  position: absolute;
+  bottom:-30rpx;
+  right: 32rpx;
+}

@@ -1,0 +1,13 @@
+
+<!--index.wxml-->
+<view class="container">
+  <image src="../../images/icon.png" class="banner"></image>
+  <form bindsubmit="formSubmit">
+    <input placeholder="请输入书名" name="input" />
+    <button type="primary" form-type="submit"> 搜 索 </button>
+  </form>
+  <view class="index-motto">
+    <text class="motto">{{motto.content}} </text>
+    <text class="motto-author"> {{motto.author}}</text>
+  </view>
+</view>

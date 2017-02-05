@@ -1,0 +1,25 @@
+<view class="layout">
+  <view class="avatar">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view>
+      <text class="nick-name">{{userInfo.nickName}}</text>
+      <text class="motto">读书使人心明眼亮。 —— 伏尔泰</text>
+    </view>
+  </view>
+  <view class="books-list">
+    <view class="top-bar">
+      <image src="../../images/like.png"></image>
+      <text>喜欢的书籍</text>
+    </view>
+    <view class="empty" wx:if="{{books.length == 0}}">
+      <image src="../../images/empty.png"></image>
+      <text>您还未添加喜欢的书籍</text>
+    </view>
+    <view class="books" wx:else>
+    <view class="book" wx:for="{{books}}" data-id="{{item.id}}" bindtap="bindBookTap">
+      <image src="{{item.images.medium}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="detail-extend" hidden="{{loading}}">
+  <text>{{contentText}}</text>
+</view>

@@ -1,0 +1,27 @@
+<view class="layout">
+  <view class="reminder">
+    <text class="{{focusResult}}" bindtap="bindResultTap">搜索结果</text>
+    <text class="{{focusCollected}}"bindtap="bindCollectedTap">已收藏</text>
+  </view>
+  <view class="books-list">
+    <view class="book" wx:for="{{books}}" data-id="{{item.id}}"
+    bindtap="bindBookTap">
+      <view class="book-msg">
+        <image src="{{item.images.small}}"></image>
+        <view class="text-msg">
+        <view class="title-mark">
+          <text class="title">{{item.title}}</text><text id="mark" wx:if="{{item.mark}}">已收藏</text>
+        </view>
+          <view class="grade">
+            <progress percent="{{item.grade}}" stroke-width="6" color="#FDB235"/>
+            <text>{{item.rating.average}}</text>
+          </view>
+          <text class="other-msg">{{item.author[0]}}/{{item.publisher}}/{{item.pubdate}}</text>
+        </view>
+      </view>
+      <view class="summary">
+        <text>{{item.miniSummary}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+<view class="layout">
+  <view class="top-bar">
+    <image src="../../images/icon.png" class="icon"></image>
+    <text> 为您推荐</text>
+    <image src="../../images/arrows.png" class="book-icon"></image>
+  </view>
+  <swiper indicator-dots="true" autoplay="true" interval="6000" duration="3000">
+    <block wx:for="{{bannerBooks}}">
+      <swiper-item>
+        <image src="{{item.image}}" class="slide-image" data-id="{{item.id}}" data-purchase="{{item.purchase_url}}" bindtap="bindToDetailTap"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="hot-books">
+    <view class="hb-bar">
+      <text> 热门书单</text>
+      <image src="../../images/arrows.png" class="book-icon"></image>
+    </view>
+    <view class="hb-booklist">
+      <view class="hb-book" wx:for="{{hotBooks}}" bindtap="bindToDetailTap" data-purchase="{{item.purchase_url}}" data-id="{{item.id}}">
+        <image src="{{item.images.medium}}"></image>
+        <text class="book-name">{{item.title}}</text>
+        <view class="book-grade">
+          <progress percent="{{item.grade}}" stroke-width="6" color="#FDB235" />
+          <text class="grade">{{item.rating.average}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="boutique-books">
+    <view class="bb-bar">
+      <text> 精品书单</text>
+      <image src="../../images/arrows.png" class="book-icon"></image>
+    </view>
+    <view class="bb-booklist">
+      <view class="book" wx:for="{{boutiqueBooks}}" data-id="{{item.id}}" data-purchase="{{item.purchase_url}}" bindtap="bindToDetailTap">
+        <image src="{{item.images.title_img}}" class="title-img"></image>
+        <image src="{{item.images.author}}" class="author"></image>
+        <text class="book-name">{{item.title}}</text>
+        <text class="book-summary">{{item.miniSummary}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,117 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60rpx;
+  width: 80%;
+  padding-top: 30rpx;
+  margin-left: 10%;
+  display: flex;
+}
+
+.reminder text {
+  font-size: 32rpx;
+  flex-grow: 1;
+  text-align: center;
+  color: #ccc;
+  font-family: "Microsoft YaHei";
+  border-bottom: 4rpx solid #ccc;
+  padding-bottom: 10rpx;
+}
+
+.reminder .current {
+  color: #1aad16;
+  border-bottom: 4rpx solid #1aad16;
+}
+
+.books-list {
+  flex-grow: 1;
+  padding: 100rpx 30rpx 0 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-msg {
+  border: 2rpx solid #ccc;
+  height: 220rpx;
+  padding-left: 30rpx;
+  margin: 10rpx 0 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.book-msg image {
+  width: 130rpx;
+  height: 200rpx;
+}
+
+.book-msg .text-msg {
+  flex-grow: 1;
+  padding-left: 30rpx;
+}
+.book-msg .title-mark{
+  display: flex;
+  align-items: center;
+}
+.book-msg .title {
+  font: 36rpx;
+  font-family: "Microsoft YaHei";
+  display: inline-block;
+  max-width: 380rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.book-msg #mark {
+  margin-left: 20rpx;
+  padding: 4rpx;
+  font-size: 24rpx;
+  color: #1aad16;
+  border: 2rpx solid #1aad16;
+  border-radius: 4rpx;
+}
+
+.book-msg .grade {
+  width: 260rpx;
+  margin: 30rpx 0;
+  position: relative;
+}
+
+.grade progress {
+  width: 200rpx;
+}
+
+.grade text {
+  font-size: 28rpx;
+  color: #fdb235;
+  position: absolute;
+  top: -10rpx;
+  right: 0;
+}
+
+.book-msg .other-msg {
+  font-size: 30rpx;
+  color: #aaa;
+}
+
+.summary {
+  font: 30rpx/1.6 "Microsoft YaHei";
+  color: #444;
+  padding: 0 10rpx 20rpx 10rpx;
+  max-height: 133rpx;
+  overflow: hidden;
+}

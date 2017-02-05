@@ -1,0 +1,51 @@
+<view class="layout">
+  <view class="bookcover-wrap">
+    <image src="{{book.images.large}}"></image>
+  </view>
+  <view class="bookinfo-wrap">
+    <view class="basic-msg">
+      <view class="basicmsg-left">
+        <text class="book-name">{{book.title}}</text>
+        <text>作者：{{book.author[0]}}</text>
+        <text>出版社：{{book.publisher}}</text>
+        <text>出版时间：{{book.pubdate}}</text>
+      </view>
+      <view class="basicmsg-right">
+        <text class="average">{{book.rating.average}}</text>
+        <progress percent="{{book.grade}}" stroke-width="6" color="#FDB235" />
+        <text class="num-raters">{{book.rating.numRaters}}人</text>
+      </view>
+    </view>
+    <view class="collected-btn">
+      <button class="uncollected" type="default" bindtap="uncollectedTap" wx:if="{{collected}}"> 取消收藏 </button>
+      <button type="primary" bindtap="collectedTap" wx:else> 收藏该书 </button>
+    </view>
+    <view class="buy-book">
+    <view>
+      <image src="../../images/bookicon.png"></image>
+      <text class="reminder">纸质版本购买</text>
+    </view>
+      <navigator url="{{purchaseUrl}}"><text class="merchant">推荐商家 ></text></navigator>
+    </view>
+    <view class="other-msg">
+      <view class="section">
+        <text class="title">内容简介</text>
+        <text class="content" catchtap="catchSummaryTap">{{book.miniSummary}}
+          <text class="more">展开＞</text>
+        </text>
+      </view>
+      <view class="section">
+        <text class="title">作者简介</text>
+        <text class="content" catchtap="catchAuthorTap">{{book.miniAuthorintro}}
+          <text class="more">展开＞</text>
+        </text>
+      </view>
+      <view class="section">
+        <text class="title">目录</text>
+        <text class="content" catchtap="catchCatalogTap">{{book.miniCatalog}}
+          <text class="more">展开＞</text>
+        </text>
+      </view>
+    </view>
+  </view>
+</view>

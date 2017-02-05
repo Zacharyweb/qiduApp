@@ -1,0 +1,10 @@
+page{
+  background-color:  #f9f9f9;
+}
+.detail-extend{
+  padding:30rpx;
+}
+.detail-extend text{
+  font: 28rpx/1.8 "Microsoft YaHei";
+  color: #494949;
+}

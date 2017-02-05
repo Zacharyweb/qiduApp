@@ -1,0 +1,150 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.layout{
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei"
+}
+swiper{
+    width: 750rpx;
+  height: 340rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 340rpx;
+}
+.top-bar{
+  height: 60rpx;
+  padding: 0 6rpx;
+  margin:10rpx 0;
+  border-left:10rpx solid #1aad16;
+  display: flex;
+  align-items: flex-end;
+}
+.top-bar .icon{
+  width: 138rpx;
+  height: 60rpx;
+}
+.top-bar .book-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.top-bar text{
+  font: 30rpx "SimSun";
+  color:#494949;
+  font-weight: bold;
+}
+.hot-books{
+  padding: 20rpx 0;
+  height: 440rpx;
+  margin-bottom: 10rpx;
+  box-shadow: 0 2rpx 4rpx 4rpx #ededed;
+}
+.hb-bar{
+  height: 60rpx;
+  padding: 0 20rpx;
+  margin:10rpx 0 20rpx 0;
+  border-left:10rpx solid #1aad16;
+  display: flex;
+  align-items: flex-end;
+}
+.hb-bar text{
+  font: 30rpx "SimSun";
+  color:#494949;
+  font-weight: bold;
+}
+.hb-bar image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.hb-booklist{
+  display: flex;
+   justify-content: space-around;
+}
+.hb-book{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+.hb-book image{
+  width: 170rpx;
+  height: 251rpx;
+}
+.hb-book .book-name{
+  display: block;
+  max-width: 170rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+  font-weight: bold;
+  color:#494949;
+  padding: 16rpx 0;
+}
+.hb-book progress{
+  width: 120rpx;
+}
+.book-grade{
+  display: flex;
+}
+.book-grade .grade{
+  padding-left: 20rpx;
+  font-size: 24rpx;
+  color: #FDB235;
+}
+.boutique-books{
+  padding: 20rpx 0 40rpx 0;
+  height: 440rpx;
+}
+.bb-bar{
+  height: 60rpx;
+  padding: 0 20rpx;
+  margin:10rpx 0;
+  border-left:10rpx solid #1aad16;
+  display: flex;
+  align-items: flex-end;
+}
+.bb-bar text{
+  font: 30rpx "SimSun";
+  color:#494949;
+  font-weight: bold;
+}
+.bb-bar image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.bb-booklist{
+
+}
+.bb-booklist .book{
+ margin-bottom: 30rpx;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+}
+.bb-booklist .book .title-img{
+  width: 750rpx;
+  height: 250rpx
+}
+.bb-booklist .book .author{
+  position: absolute;
+  top:220rpx;
+  right: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border: 2rpx solid #fff;
+  border-radius: 50%;
+}
+.bb-booklist .book .book-name{
+  font-size: 34rpx;
+  color:#494949;
+  font-weight: bold;
+  padding: 20rpx 30rpx; 
+}
+.bb-booklist .book .book-summary{
+  padding: 0 30rpx; 
+  font-size: 26rpx;
+  color:#8b8b8b;
+}
